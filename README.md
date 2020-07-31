@@ -19,7 +19,7 @@ $ npm install -g serverless-yaml2ts
 $ sls-yaml2ts COMMAND
 running command...
 $ sls-yaml2ts (-v|--version|version)
-serverless-yaml2ts/0.0.0 darwin-x64 node-v12.9.1
+serverless-yaml2ts/0.0.1 darwin-x64 node-v12.9.1
 $ sls-yaml2ts --help [COMMAND]
 USAGE
   $ sls-yaml2ts COMMAND
