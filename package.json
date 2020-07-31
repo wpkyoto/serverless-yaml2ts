@@ -18,6 +18,7 @@
     "@oclif/dev-cli": "^1",
     "@types/js-yaml": "^3.12.5",
     "@types/node": "^10",
+    "@types/serverless": "^1.72.5",
     "eslint": "^5.13",
     "eslint-config-oclif": "^3.1",
     "eslint-config-oclif-typescript": "^0.1",
