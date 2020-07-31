@@ -1,7 +1,7 @@
 {
   "name": "serverless-yaml2ts",
   "description": "Simple convertor from serverless.yml to serverless.ts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Hidetaka Okamoto",
   "bin": {
     "sls-yaml2ts": "./bin/run"
