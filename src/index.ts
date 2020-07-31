@@ -61,7 +61,7 @@ class ServerlessYaml2Ts extends Command {
 export const service: Serverless = ${serverlessJSON}
 
 module.exports = service`
-    writeFileSync(join(__dirname, '../serverless.ts'), serverlessTS, {
+    writeFileSync(this.targetTS, serverlessTS, {
       encoding: encode
     })
     this.log(`serverless.ts created`)
