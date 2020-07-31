@@ -4,9 +4,10 @@ import { readFileSync, writeFileSync, read } from 'fs'
 import { safeLoad } from 'js-yaml'
 
 class ServerlessYaml2Ts extends Command {
-  private readonly targetYML = join(__dirname, '../serverless.yml')
-  private readonly targetYAML = join(__dirname, '../serverless.yaml')
-  private readonly targetTS = join(__dirname, '../serverless.ts')
+  private readonly cwd = process.cwd()
+  private readonly targetYML = join(this.cwd, './serverless.yml')
+  private readonly targetYAML = join(this.cwd, './serverless.yaml')
+  private readonly targetTS = join(this.cwd, './serverless.ts')
   static description = 'describe the command here'
 
   static flags = {
@@ -42,7 +43,6 @@ class ServerlessYaml2Ts extends Command {
     try {
       readFileSync(this.targetTS)
       this.error(`${this.targetTS} is exists.`)
-      this.exit(1)
     } catch (e) {
       if (e.code !== 'ENOENT') {
         throw e
